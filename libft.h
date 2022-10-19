@@ -13,6 +13,7 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 # define SIZE_MAX UINTPTR_MAX
+/* Abdellrabiai */
 
 # include <unistd.h>
 # include <stdlib.h>
