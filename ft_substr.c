@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:31:12 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/19 16:41:51 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/19 16:44:54 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		i++;
 		start++;
 	}
-git remote add origin https://github.com/Abdellrabiai/LIBFT.git
-git branch -M main
-git push -u origin main
 	substring[i] = '\0';
 	return (substring);
 }
