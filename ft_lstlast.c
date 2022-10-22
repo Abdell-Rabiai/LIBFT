@@ -6,11 +6,11 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:17:09 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/21 10:18:02 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/22 14:37:07 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include"bonus.h"
 
 t_list	*ft_lstlast(t_list *lst)
 {

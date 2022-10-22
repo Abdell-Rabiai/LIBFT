@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 10:49:31 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/19 13:30:28 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/22 18:40:12 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return (0);
 	return ((char *)s);
 }
-
-// int main()
-// {
-//     char *str = "Hello world, it's pretty cold toxday";
-//     puts(ft_strchr(str,'t'+ 256));
-//  	puts(strchr(str,'t'+ 256));
-// }

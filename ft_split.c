@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:36:34 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 17:19:09 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/22 18:10:35 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,20 @@ static int	ft_how_many_words(const char *s, char c)
 			s++;
 	}
 	return (i);
+}
+
+static char	**ft_free_split(char **strings)
+{
+	int	i;
+
+	i = 0;
+	while (strings[i] != 0)
+	{
+		free(strings[i]);
+		i++;
+	}
+	free(strings);
+	return (NULL);
 }
 
 static int	ft_get_length_of_word(const char *s, char c)
@@ -82,6 +96,8 @@ char	**ft_split(char const *s, char c)
 		if (*s)
 		{
 			strings[i] = return_the_first_word(s, c);
+			if (!strings[i])
+				return (ft_free_split(strings));
 			i++;
 		}
 		while (*s && *s != c)

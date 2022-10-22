@@ -6,11 +6,11 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:21:51 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/21 10:22:14 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/22 14:37:30 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include"bonus.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arabiai <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:35:48 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 11:35:50 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/22 18:40:06 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
-// void ft(char *c)
-// {
-//     *c = 'A';
-// }
-
-// int main()
-// {
-//     char *s = "Hello world from the other side of earth";
-//     void (*f)(char*) = &ft;
-//     ft_striteri(s,f);
-//     puts(s);
-// }

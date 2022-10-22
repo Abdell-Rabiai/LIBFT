@@ -6,12 +6,13 @@
 #    By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/21 19:23:05 by arabiai           #+#    #+#              #
-#    Updated: 2022/10/22 13:59:56 by arabiai          ###   ########.fr        #
+#    Updated: 2022/10/22 14:59:50 by arabiai          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # MACROS / VARIABLES OF THE MAKEFILE
 EXECUTABLE = libft.a
+
 SOURCES = ft_isalpha.c ft_memcmp.c ft_strdup.c ft_strnstr.c \
 		ft_atoi.c ft_isascii.c ft_memcpy.c ft_strlcat.c ft_strrchr.c \
 		ft_bzero.c ft_isdigit.c ft_memmove.c ft_strlcpy.c ft_tolower.c \
@@ -33,7 +34,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 RM = rm -rf
 
-HEADER_FILES = libft.h
+HEADER_FILES = libft.h bonus.h
 
 # THE Rules NEEDED FOR THE COMPILATION / 
 all : $(EXECUTABLE)

@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:14:33 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 12:25:17 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/22 18:39:58 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	strjoin[i] = '\0';
 	return (strjoin);
 }
-
-// int main()
-// {
-//     char *s1 = "Hello world from th";
-//     char *s2 = "e other side of earth";
-//     char *strjoin = ft_strjoin(s1,s2);
-//     puts(strjoin);
-// }

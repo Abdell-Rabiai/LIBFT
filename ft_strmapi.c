@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:33:47 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 11:34:52 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/22 18:39:51 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-// int main()
-// {
-//     char *s = "Hello world from the other side of earth";
-//     int (*f)(int) = &ft_toupper;
-//     char *str = ft_strmapi(s,f);
-//     puts(str);
-// }
