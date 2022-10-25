@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:39:15 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 14:34:02 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/25 15:18:51 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned int	i;
 
 	i = 0;
-	if ((!dst && !src))
-		return (NULL);
 	while (i < n)
 	{
 		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];

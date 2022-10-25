@@ -6,12 +6,12 @@
 #    By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/21 19:23:05 by arabiai           #+#    #+#              #
-#    Updated: 2022/10/22 14:59:50 by arabiai          ###   ########.fr        #
+#    Updated: 2022/10/25 15:08:17 by arabiai          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # MACROS / VARIABLES OF THE MAKEFILE
-EXECUTABLE = libft.a
+NAME = libft.a
 
 SOURCES = ft_isalpha.c ft_memcmp.c ft_strdup.c ft_strnstr.c \
 		ft_atoi.c ft_isascii.c ft_memcpy.c ft_strlcat.c ft_strrchr.c \
@@ -24,45 +24,48 @@ SOURCES = ft_isalpha.c ft_memcmp.c ft_strdup.c ft_strnstr.c \
 BONUS_SOURCES = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c \
 
-OBJECTS = $(SOURCES:.c=.o)
-
-BONUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
-
 CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
 RM = rm -rf
 
-HEADER_FILES = libft.h bonus.h
+ECHO1 = @echo "\033[92mCompiled all files successfully!\033[0m"
+
+ECHO2 = @echo "\033[92mCompiled all BONUS files successfully!\033[0m"
+
+OBJECTS = $(SOURCES:.c=.o)
+
+BONUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 
 # THE Rules NEEDED FOR THE COMPILATION / 
-all : $(EXECUTABLE)
+all : $(NAME)
 
-$(EXECUTABLE) : $(OBJECTS) $(HEADER_FILES)
-	ar rc $(EXECUTABLE) $(OBJECTS)
+$(NAME) : $(OBJECTS) libft.h
+	$(ECHO1)
+	ar rc $(NAME) $(OBJECTS)
 
 # THIS IS A GENERIC RULE 
-%.o: %.c $(HEADER_FILES)
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
-	@echo "\033[92mCompiled the file : "$<" successfully!\033[0m"
 
-so: for linux os
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SOURCES)
-	$(CC) -nostartfiles -shared -o libft.so $(OBJECTS)
+# so: for linux os
+# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SOURCES)
+# 	$(CC) -nostartfiles -shared -o libft.so $(OBJECTS)
 
-bonus : $(OBJECTS) $(BONUS_OBJECTS)
-	ar rc $(EXECUTABLE) $(OBJECTS) $(BONUS_OBJECTS)
+bonus : $(OBJECTS) $(BONUS_OBJECTS) libft.h
+	$(ECHO2)
+	ar rc $(NAME) $(OBJECTS) $(BONUS_OBJECTS)
 
-so_bonus:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(BONUS_SOURCES) \
-	$(CC) -nostartfiles -shared -o libft.so $(BONUS_OBJECTS) \
+# so_bonus:
+# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(BONUS_SOURCES) \
+# 	$(CC) -nostartfiles -shared -o libft.so $(BONUS_OBJECTS) \
 
 clean :
 	$(RM) $(OBJECTS) $(BONUS_OBJECTS)
 
 fclean : clean
-	$(RM) $(EXECUTABLE)
+	$(RM) $(NAME)
 
 re : fclean all
 

@@ -6,11 +6,11 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:06:00 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/22 14:36:46 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/24 12:53:06 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"bonus.h"
+#include"libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
