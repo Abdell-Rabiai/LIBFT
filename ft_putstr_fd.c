@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arabiai <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:37:06 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 11:37:08 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/26 21:35:36 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,3 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
-// int main()
-// {
-//     int fd = open("foo.txt", O_CREAT | O_RDONLY | O_WRONLY);
-//     printf("%d\n",fd);
-//     ft_putstr_fd("Hello world from the other side of earth",fd);
-// }

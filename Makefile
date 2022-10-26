@@ -6,7 +6,7 @@
 #    By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/21 19:23:05 by arabiai           #+#    #+#              #
-#    Updated: 2022/10/25 15:08:17 by arabiai          ###   ########.fr        #
+#    Updated: 2022/10/25 19:41:54 by arabiai          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ OBJECTS = $(SOURCES:.c=.o)
 BONUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 
 # THE Rules NEEDED FOR THE COMPILATION / 
+
 all : $(NAME)
 
 $(NAME) : $(OBJECTS) libft.h
@@ -49,17 +50,9 @@ $(NAME) : $(OBJECTS) libft.h
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# so: for linux os
-# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SOURCES)
-# 	$(CC) -nostartfiles -shared -o libft.so $(OBJECTS)
-
 bonus : $(OBJECTS) $(BONUS_OBJECTS) libft.h
 	$(ECHO2)
 	ar rc $(NAME) $(OBJECTS) $(BONUS_OBJECTS)
-
-# so_bonus:
-# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(BONUS_SOURCES) \
-# 	$(CC) -nostartfiles -shared -o libft.so $(BONUS_OBJECTS) \
 
 clean :
 	$(RM) $(OBJECTS) $(BONUS_OBJECTS)

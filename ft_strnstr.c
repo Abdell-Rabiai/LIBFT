@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:33:22 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 15:26:06 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/26 21:35:56 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (0);
 }
 
-// int main()
-// {
-//     char *hay = "Hello world the other side of earth";
-//     char *nee = "other";
-//     puts(ft_strnstr(hay,nee,19));
-//     puts(strnstr(hay,nee,19));
-// }

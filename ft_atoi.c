@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:43:36 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 16:00:54 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/26 21:30:33 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ static int	ft_iswspace(char c)
 
 int	ft_atoi(const char *str)
 {
-	int				sign;
-	unsigned long	res;
+	int	sign;
+	int	res;
 
 	sign = 1;
 	res = 0;
@@ -39,19 +39,7 @@ int	ft_atoi(const char *str)
 	{
 		res *= 10;
 		res += *str - '0';
-		if ((res >= 9223372036854775807UL) && sign == 1)
-			return (-1);
-		if ((res >= 9223372036854775808UL) && sign == -1)
-			return (0);
 		str++;
 	}
 	return (res * sign);
 }
-
-// int main(void)
-// {
-//     char *s;
-//     s = "   \t\v\r\f\n     9223372036854775807UL "; // long long max
-//     printf("C_atoi = %d\n",atoi(s));
-//     printf("My_atoi = %d\n",ft_atoi(s));
-// }

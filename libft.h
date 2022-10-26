@@ -6,16 +6,16 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:50:46 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/25 14:23:08 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/26 21:34:15 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# define SIZE_MAX UINTPTR_MAX
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 
 /* The first part/ Mandatory */
 int		ft_isalpha(int c);

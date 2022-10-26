@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:39:30 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 14:45:41 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/26 21:35:22 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main()
-// {
-//     char *s1 = "Hello\0aworld";
-// 	char *s2 = "Hello\0\0world";
-//     printf(">>>memcmp %d\n",(memcmp(s1,s2,12)));
-//     printf("ft_memcmp %d\n",(ft_memcmp(s1,s2,12)));
-// }

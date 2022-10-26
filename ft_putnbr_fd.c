@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:37:29 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 16:52:49 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/26 21:35:34 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,3 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 
-// int main()
-// {
-//     int fd = open("foo.txt", O_CREAT | O_RDONLY | O_WRONLY);
-//     printf("%d\n",fd);
-//     ft_putnbr_fd(-2147483648,fd);
-// }

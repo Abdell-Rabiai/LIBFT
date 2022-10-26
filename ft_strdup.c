@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:36:07 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/18 16:02:29 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/26 21:35:45 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,3 @@ char	*ft_strdup(const char *src)
 	return (copy);
 }
 
-// int    main(void)
-// {
-//     char    *s;
-//     char    *cp;
-
-//     s = "Hello World";
-//     cp = ft_strdup(s);
-//     puts(s);
-//     printf("%s\n", cp);
-//     return (0);
-// }
