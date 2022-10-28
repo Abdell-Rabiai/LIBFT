@@ -6,7 +6,7 @@
 /*   By: arabiai <arabiai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:36:07 by arabiai           #+#    #+#             */
-/*   Updated: 2022/10/26 21:35:45 by arabiai          ###   ########.fr       */
+/*   Updated: 2022/10/26 21:41:16 by arabiai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ char	*ft_strdup(const char *src)
 	copy[i] = '\0';
 	return (copy);
 }
-
